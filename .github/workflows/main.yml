@@ -19,6 +19,7 @@ jobs:
         with:
           version: v1.55
           skip-cache: true
+          args: --timeout=3m
 
   test:
     name: "Test"
