@@ -1,0 +1,25 @@
+# Ignora o versionamento do Git e arquivos do Github Actions
+.git
+.github
+.gitignore
+
+# Ignora este próprio arquivo
+.dockerignore
+
+# Ignora arquivos de documentação e licença
+README.md
+LICENSE
+
+# Ignora a pasta de infraestrutura do Terraform
+infra/
+.terraform
+.terraform.lock.hcl
+
+# Ignora arquivos de IDE e ambiente local
+.vscode/
+.idea/
+.venv/
+
+# Ignora binários e dependências locais
+ms-saudacoes-aleatorias
+vendor/

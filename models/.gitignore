@@ -27,3 +27,6 @@ devbox.lock
 .terraform.lock.hcl
 .terraform.tfstate
 .terraform.tfstate.backup
+
+# Go binary
+ms-saudacoes-aleatorias
