@@ -14,12 +14,20 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
+      - name: Configurar Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+          cache: false
+
+      - name: Baixar dependências
+        run: go mod download
+
       - name: Rodar GolangCI-Lint
         uses: golangci/golangci-lint-action@v3
         with:
           version: v1.59
-          skip-cache: true
-          args: --timeout=3m
+          args: --timeout=5m
 
   test:
     name: "Test"
@@ -63,7 +71,6 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USER }}/ms-saudacoes-aleatorias:latest
-
 
   deploy:
     name: "Deploy"
