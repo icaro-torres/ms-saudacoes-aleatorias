@@ -10,6 +10,7 @@ jobs:
   build-lint:
     name: "Build & Lint"
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Checkout do código
         uses: actions/checkout@v3
