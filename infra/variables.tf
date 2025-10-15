@@ -17,14 +17,13 @@ variable "container_port" {
   type    = number
   default = 8080
 }
-
+  
 variable "docker_image_name" {
-  type    = string
-  default = "xxxxxx/ms-saudacoes-aleatorias"
+  description = "The name of the Docker image to deploy."
+  type        = string
 }
 
 variable "docker_image_tag" {
-  type    = string
-  default = "latest"
+  description = "The tag of the Docker image to deploy."
+  type        = string
 }
-  
