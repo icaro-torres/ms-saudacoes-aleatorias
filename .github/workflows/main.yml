@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_USER: taotreinatec
-  DOCKER_IMAGE_NAME: ${{ vars.DOCKER_USER || 'taotreinatec' }}/ms-saudacoes-aleatorias
+  DOCKER_USER: oicarotorres
+  DOCKER_IMAGE_NAME: ${{ vars.DOCKER_USER || 'oicarotorres' }}/ms-saudacoes-aleatorias
   DOCKER_IMAGE_TAG: 1.0.${{ github.run_id }}
   SERVICE_NAME: saudacoes-aleatorias
 
